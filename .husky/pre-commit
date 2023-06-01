@@ -2,5 +2,8 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 # npm run lint:check
-npm run prettier:lint
+# npm run prettier-lint:check
+npx lint-staged
+
+
 
