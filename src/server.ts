@@ -2,6 +2,9 @@ import mongoose from 'mongoose'
 import app from './App'
 import config from './Config/index'
 
+
+
+
 async function main() {
   try {
     await mongoose.connect(config.database_url as string)

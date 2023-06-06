@@ -17,6 +17,10 @@ const userSchema = new Schema<IUser, UserModel>({
     type: String,
     required: true,
   },
-})
+},
+{
+  timestamps: true
+}
+)
 
 export const User = model<IUser, UserModel>('Users', userSchema)
