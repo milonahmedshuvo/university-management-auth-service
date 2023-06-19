@@ -1,7 +1,7 @@
-import { Model, Schema, model } from 'mongoose'
-import { IUser } from './users.interface'
+import {  Schema, model } from 'mongoose'
+import { IUser, UserModel } from './users.interface'
 
-type UserModel = Model<IUser, object>
+
 
 const userSchema = new Schema<IUser, UserModel>({
   id: {

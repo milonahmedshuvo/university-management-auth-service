@@ -1,15 +1,13 @@
 import express from 'express'
-import userControral from './user.controral'
+import { UserController } from './user.controral'
 const router  = express.Router()
 
 
-router.post("/createUser", userControral.createUserControl)
+router.post("/createUser", UserController.createUserControl)
 
 
 
-export default {
-    router
-}
+export const UserRoutes= router
 
 
 
