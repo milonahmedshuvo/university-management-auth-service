@@ -5,6 +5,8 @@ class ApiError extends Error {
         super(message)
         this.statusCode= statusCode
 
+
+        
         if(stack){
             this.stack= stack
         }else{
